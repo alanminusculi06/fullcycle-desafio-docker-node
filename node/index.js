@@ -35,8 +35,8 @@ findAll = function (callback) {
     });
 };
 
-app.get('/:name', (req, res) => {
-    insert(req.params.name)
+app.get('/', (req, res) => {
+    insert("Alan")
     findAll(function (err, results) {
         if (err)
             throw err;
